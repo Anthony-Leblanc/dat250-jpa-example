@@ -1,12 +1,15 @@
 package no.hvl.dat250.jpa.assignment2;
 
-
 import javax.persistence.*;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 @Entity
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 public class CreditCard {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,5 +21,4 @@ public class CreditCard {
 
   @ManyToOne
   private Bank owningBank;
-
 }

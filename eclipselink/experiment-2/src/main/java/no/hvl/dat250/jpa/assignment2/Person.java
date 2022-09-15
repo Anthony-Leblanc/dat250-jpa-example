@@ -2,12 +2,16 @@ package no.hvl.dat250.jpa.assignment2;
 
 import javax.persistence.*;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 import java.util.Set;
 
 @Entity
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 public class Person {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,11 +21,5 @@ public class Person {
   private Set<CreditCard> creditCards;
 
   @ManyToMany
-    /*@JoinTable(
-    		  name = "person_address",
-    		  joinColumns = @JoinColumn(name = "person_id"),
-    		  inverseJoinColumns = @JoinColumn(name = "address_id"))*/
   private Set<Address> addresses;
-
-
 }

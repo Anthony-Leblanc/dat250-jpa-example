@@ -3,8 +3,8 @@ package no.hvl.dat250.jpa.assignment2;
 import javax.persistence.*;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 import java.util.Set;
 
