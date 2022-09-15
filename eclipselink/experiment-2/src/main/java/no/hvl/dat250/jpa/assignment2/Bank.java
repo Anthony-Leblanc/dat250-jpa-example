@@ -1,24 +1,23 @@
 package no.hvl.dat250.jpa.assignment2;
 
 import javax.persistence.*;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.Set;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
 public class Bank {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
+  private String name;
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        // TODO: implement method!
-        return null;
-    }
-
-    public Set<CreditCard> getOwnedCards() {
-        return null;
-    }
+  @OneToMany(mappedBy = "owningBank")
+  private Set<CreditCard> ownedCards;
 }
