@@ -1,32 +1,32 @@
 # Experiment 2
 
-This project is an introduction to the creation of databases with Java, an experiment some tools usable to create those.
+This project is an introduction to the creation of databases with Java, and to experiment with some tools to create them.
 
-## Intallation :
+## Installation :
 
-I encounter so specific problem during the installation of the persistance.
+I encountered some specific problems during the installation of the JPA.
 
 ## JPA :
 
-To write the code, I have been using ItelliJ IDEA, because this software as the advantage to create the databases locally to show the schema of the relation between the datas.
-To use it correctly I should download all the dependencies necessary to the project : JPA, JDK, Maven and lombock. The sofware being nicely developped shows the errors from these dependencies that are not installed in it. By clicking in those errors it shows how to install the dependencies. So I encounter no particular difficulties to install them.
-To create the database, I started to read the schema of the subject and completed the classes to match with it. While doing that some errors appears that was from the MainTest that named the attributes of the class differently than in the diagram. So I have just adapted the name of the attribute to match with the MaintTest class.
+To write the code, I used ItelliJ IDEA, because this software has the advantage of creating databases locally and to show the schema of the relation between data.
+To use it correctly I downloaded all the necessary dependencies to the project : JPA, JDK, Maven and lombock. The sofware being well developped shows the missing dependencies. By clicking on those errors, it shows how to install the dependencies. So I didn't encounter any particular difficulties when installing them.
+To create the database, I started by reading the schema of the subject and completed the classes to match with it. While doing that, some errors appeared in the MainTest, it named the attributes of the class differently than in the diagram. So I just adapted the name of the attribute to match with the MaintTest class.
 
 ## Inspection of database ;
 
-To verifie the databases, I have created a main that load the attributes of the different classes to match with this diagram :
+To verify the databases, I created a main that loaded the attributes of the different classes to match with this diagram :
 
 ![image](https://user-images.githubusercontent.com/83810301/190598539-1b1ec256-9f71-49f2-8675-e7b97cb0db4b.png)
 
-To see if it match correctly with my test, I create the one corresponding to my code :
+To see if it matched correctly with my test, I displayed the schema that corresponded with y code with Intellij :
 
 ![image](https://user-images.githubusercontent.com/83810301/190598465-be00f6cc-aa09-4b4b-8b07-c63c2f714df2.png)
 
-I think that the datas are upload correclty despite the double arrow between the Person class and the CreditCard class that should have been mono directional.
+I think that the data was uploaded correclty despite the double arrow between the Person class and the CreditCard class when it was supposed to be mono directional.
 
 ## Issues :
 
-I didn't encounter particular issues. But I have a miss understanding of an error that I get in ItelliJ that I don't have in Eclipse :
+I didn't encounter any particular issues. But I had a misunderstanding of an error that I got in IntelliJ that I didn't have in Eclipse :
 
 ![image](https://user-images.githubusercontent.com/83810301/190602387-ef261cdd-7c5e-4972-84fc-c238567d563d.png)
 
