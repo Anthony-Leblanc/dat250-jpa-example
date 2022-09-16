@@ -2,7 +2,7 @@
 
 This project is an introduction to the creation of databases with Java, and to experiment with some tools to create them.
 
-See : https://github.com/Anthony-Leblanc/dat250-jpa-example/tree/master/eclipselink/experiment-2
+Corresponding code : https://github.com/Anthony-Leblanc/dat250-jpa-example/tree/master/eclipselink/experiment-2
 
 ## Installation :
 
